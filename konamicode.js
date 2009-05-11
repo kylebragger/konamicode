@@ -30,8 +30,9 @@
         
         $(document).keyup(function(e){
             key_accum = key_accum + (e.keyCode ? e.keyCode : e.charCode);
-            if (key_accum == match)
+            if (key_accum.indexOf(match) != -1)
             {
+                key_accum = '';
                 if (options.callback)
                 {
                     options.callback($(this));
