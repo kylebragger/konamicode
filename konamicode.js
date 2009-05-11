@@ -30,7 +30,6 @@
         
         $(document).keyup(function(e){
             key_accum = key_accum + (e.keyCode ? e.keyCode : e.charCode);
-            console.log(key_accum, match);
             if (key_accum == match)
             {
                 if (options.callback)
