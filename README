@@ -7,8 +7,8 @@
     
     $(document).ready(function(){
         $('body').upUpDownDown({
-            watchFor: '38384040373937396665', // String of keyCode and charCodes to watch for
-                                              // 38384040373937396665 == up up down down left right left right B A
+            watchFor: [38,38,40,40,37,39,37,39,66,65], // Array of keyCode and charCodes to watch for
+                                                       // [38,38,40,40,37,39,37,39,66,65] == up up down down left right left right B A
             callback: function(){
                 // Do some fancy shit here.
             }
