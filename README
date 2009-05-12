@@ -8,7 +8,8 @@
     $(document).ready(function(){
         $('body').upUpDownDown({
             watchFor: [38,38,40,40,37,39,37,39,66,65], // Array of keyCode and charCodes to watch for
-                                                       // [38,38,40,40,37,39,37,39,66,65] == up up down down left right left right B A
+                                                       // This represents a sequence, ordered left (first) to right (last), so:
+                                                       // [38,38,40,40,37,39,37,39,66,65] == up up down down left right left right B A, in that order
             callback: function(){
                 // Do some fancy shit here.
             }
