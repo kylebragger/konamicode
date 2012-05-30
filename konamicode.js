@@ -28,7 +28,7 @@
         var match = options.watchFor;
 
         $(document).keyup(function(e){
-            len = key_accum.push(e.keyCode ? e.keyCode : e.charCode);
+            var len = key_accum.push(e.keyCode ? e.keyCode : e.charCode);
             
             if(len > match.length) key_accum.shift();
             
